@@ -1,38 +1,175 @@
-.App {
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-link {
+  margin-right: 16px;
+}
+.nav-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.hero-container {
+  display: flex;
+  flex: 1;
+  width: 100%;
+}
+.hero-text-container {
+  flex: 0.5;
+}
+.hero-text-container h1 {
+  font-size: 3rem;
+}
+.hero-text-container h4 {
+  font-size: 1.3rem;
+  max-width: 500px;
+}
+
+.hero-img-container {
+  flex: 0.6;
+}
+.hero-img-container img {
+  max-width: 100%;
+}
+
+.primary-button {
+  padding: 16px;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding-right: 40px;
+  padding-left: 40px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.primary-button:hover {
+  background-color: blue;
+}
+
+.services-container {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.services-row {
+  display: flex;
+  justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.services-item {
+  padding: 16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.icon {
+font-size: 24px;
+border-radius: 5000px;
+background-color: black;
+padding: 16px;
+color: white;
+}
+
+.products-container {
+  text-align: center;
+}
+
+.products-row {
+  display: flex;
+  flex: 1;
+  max-width: 100%;
+}
+.products-item {
+  flex: 0.25;
+  padding: 16px;
+}
+.products-item img {
+  max-width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+}
+
+.products-item h1 {
+  font-size: 1.5rem;
+}
+.review-container{
+  text-align: center;
+}
+.review-row{
+  display: flex;
+  justify-content: space-between;
+}
+review-item {
+  text-align: center;
+}
+.review-item h1{
+  font-size: 1.3rem;
+}
+.review-item img{
+  border-radius: 500px;
+  height: 56px;
+  width: 56px;
+  object-fit: contain;
+}
+
+.review-icon{
+  font-size: 32px;
+  color: yellowgreen;
+}
+.contact-us-container{
+  text-align: center;
+}
+.contact-us-image{
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.contact-us-row{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-us-text-column{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: left;
+}
+
+.contact-us-text-column label{
+  font-size: 14px;
+  font-weight: 600;
+}
+.contact-us-text-column input{
+  padding: 16px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+.contact-us-text-column input:hover{
+  border: 1px solid rgba(0, 0, 0);
+}
+
+.contact-us-text-column button{
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-radius: 20px;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 16px;
+}
+.contact-us-text-column button:hover{
+  cursor: pointer;
+  background-color: black;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
